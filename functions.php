@@ -32,15 +32,18 @@ function projukti_theme_scripts(){
 add_action('wp_enqueue_scripts','projukti_theme_scripts');
 
 function projukti_theme_custom_logo() {
-	$defaults = array(
+	add_theme_support( 'custom-logo', array(
 		'height'               => 30,
 		'width'                => 80,
 		'flex-height'          => true,
 		'flex-width'           => true,
 		'header-text'          => array( 'site-title', 'site-description' ),
 		'unlink-homepage-logo' => false, 
-	);
-	add_theme_support( 'custom-logo', $defaults );
+	));
+
+    register_nav_menus(array(
+    'primary_menu' => __('Primary Menu', 'projukti'),
+    ));
 }
 add_action('after_setup_theme', 'projukti_theme_custom_logo');
 ?>
