@@ -93,8 +93,10 @@ header {
 }
 .logo a img {
     display: inline-block;
-    width: 100%;
-    height: auto;
+    width: 100px;
+    height: 36px;
+    object-fit: cover;
+    object-position: center center;
     margin-top: 7px;
 }
 .menu-button-wrapper {
@@ -405,7 +407,7 @@ nav.main-menu-phone ul {
 
 .engagement-wrapper h3 span {
     color: #5F5B53;
-    font-family: Poppins;
+    font-family: "Poppins", sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
@@ -2058,7 +2060,7 @@ footer {
 
 .address-details span {
     color: #BFBCB2;
-    font-family: Poppins;
+    font-family: "Poppins", sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
