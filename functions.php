@@ -42,7 +42,9 @@ function projukti_theme_custom_logo() {
 	));
 
     register_nav_menus(array(
-    'primary_menu' => __('Primary Menu', 'projukti'),
+        'primary_menu' => __('Primary Menu', 'projukti'),
+        'footer_menu_one' => __('Footer Menu One', 'projukti'),
+        'footer_menu_two' => __('Footer Menu Two', 'projukti'),
     ));
 }
 add_action('after_setup_theme', 'projukti_theme_custom_logo');
