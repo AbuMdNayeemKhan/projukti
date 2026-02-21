@@ -97,7 +97,7 @@
             </div>
 
             <div class="copyright-area">
-                <p>Copyright ©2022 webdesign.gdn All rights reserved</p>
+                <p>Copyright &copy; <?php echo date('Y');?> <?php bloginfo('name'); ?>. All rights reserved</p>
             </div>
         </div>
     </footer>
