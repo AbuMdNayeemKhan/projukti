@@ -48,4 +48,26 @@ function projukti_theme_custom_logo() {
     ));
 }
 add_action('after_setup_theme', 'projukti_theme_custom_logo');
+
+function projukti_footer_register ($wp_customize){
+    $wp_customize -> add_section('footer_settings', array(
+        'title' => __('Footer Settings', 'projukti'),
+        'priority' => 120,
+    ));
+
+    // About Text
+
+    $wp_customize -> add_setting('footer_about_text', array(
+        'default' => '',
+    ));
+
+    $wp_customize -> add_control('footer_about_text', array(
+        'label' => __('About Text', 'projukti'),
+        'section' => 'footer_settings',
+        'type' => 'textarea',
+    ));
+}
+
+add_action('customize_register', 'projukti_footer_register');
+
 ?>
