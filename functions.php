@@ -56,15 +56,23 @@ function projukti_footer_register ($wp_customize){
     ));
 
     // About Text
-
     $wp_customize -> add_setting('footer_about_text', array(
         'default' => '',
     ));
-
     $wp_customize -> add_control('footer_about_text', array(
         'label' => __('About Text', 'projukti'),
         'section' => 'footer_settings',
         'type' => 'textarea',
+    ));
+
+    // About Text
+    $wp_customize -> add_setting('footer_menu_one_title', array(
+        'default' => '',
+    ));
+    $wp_customize -> add_control('footer_menu_one_title', array(
+        'label' => __('Footer Menu One Title', 'projukti'),
+        'section' => 'footer_settings',
+        'type' => 'text',
     ));
 }
 
