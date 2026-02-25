@@ -65,7 +65,7 @@ function projukti_footer_register ($wp_customize){
         'type' => 'textarea',
     ));
 
-    // About Text
+    // Footer Menu One Title
     $wp_customize -> add_setting('footer_menu_one_title', array(
         'default' => '',
     ));
@@ -74,6 +74,27 @@ function projukti_footer_register ($wp_customize){
         'section' => 'footer_settings',
         'type' => 'text',
     ));
+
+    // Footer Menu Two Title
+    $wp_customize -> add_setting('footer_menu_two_title', array(
+        'default' => '',
+    ));
+    $wp_customize -> add_control('footer_menu_two_title', array(
+        'label' => __('Footer Menu Two Title', 'projukti'),
+        'section' => 'footer_settings',
+        'type' => 'text',
+    ));
+
+    // Footer Address Title
+    $wp_customize -> add_setting('footer_address_title', array(
+        'default' => '',
+    ));
+    $wp_customize -> add_control('footer_address_title', array(
+        'label' => __('Footer Address Title', 'projukti'),
+        'section' => 'footer_settings',
+        'type' => 'text',
+    ));
+
 }
 
 add_action('customize_register', 'projukti_footer_register');

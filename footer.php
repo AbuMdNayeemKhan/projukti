@@ -46,7 +46,7 @@
 
                 <!----- company links ----->
                 <div class="footer-nav company">
-                    <div>Company</div>
+                    <div><?php echo get_theme_mod('footer_menu_one_title'); ?></div>
                     <hr>
 
                     <?php
@@ -57,7 +57,7 @@
                 </div>
 
                 <div class="footer-nav support">
-                    <div>Support</div>
+                    <div><?php echo get_theme_mod('footer_menu_two_title'); ?></div>
                     <hr>
 
                     <?php
@@ -68,7 +68,7 @@
                 </div>
 
                 <div class="footer-nav address">
-                    <div>Address</div>
+                    <div><?php echo get_theme_mod('footer_address_title');?></div>
                     <hr>
 
                     <!----- location ----->
