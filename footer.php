@@ -74,21 +74,21 @@
                     <!----- location ----->
                     <div class="address-details location">
                         <a href="https://maps.app.goo.gl/5QJbeQc3kLpr9bX49">
-                            <span><strong>Location:</strong> 27 Division St, New York, NY 10002, USA</span>
+                            <span><strong><?php echo get_theme_mod('footer_address_one_title') ?></strong> <?php echo get_theme_mod('footer_address_one') ?></span>
                         </a>
                     </div>
 
                     <!----- email ----->
                     <div class="address-details email">
                         <a href="mailto:email@gmail.com">
-                            <span><strong>Email:</strong> email@gmail.com</span>
+                            <span><strong><?php echo get_theme_mod('footer_address_two_title') ?></strong> <?php echo get_theme_mod('footer_address_two') ?></span>
                         </a>
                     </div>
 
                     <!----- contact number ----->
                     <div class="address-details phone">
-                        <a href="tel:+0001234567890">
-                            <span><strong>Phone:</strong> + 000 1234 567 890</span>
+                        <a href="tel:+8801619981998">
+                            <span><strong><?php echo get_theme_mod('footer_address_three_title') ?></strong> <?php echo get_theme_mod('footer_address_three') ?></span>
                         </a>
                     </div>
                 </div>

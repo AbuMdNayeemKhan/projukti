@@ -95,6 +95,67 @@ function projukti_footer_register ($wp_customize){
         'type' => 'text',
     ));
 
+    // Footer Address One title
+    $wp_customize -> add_setting('footer_address_one_title', array(
+        'default' => '',
+    ));
+    $wp_customize -> add_control('footer_address_one_title', array(
+        'label' => __('Footer Address One Title'),
+        'section' => 'footer_settings',
+        'type' => 'text'
+        
+    ));
+
+    // Footer Address One
+    $wp_customize -> add_setting('footer_address_one', array(
+        'default' => '',
+    ));
+    $wp_customize -> add_control('footer_address_one', array(
+        'label' => __('Footer Address One ', 'projukti'),
+        'section' => 'footer_settings',
+        'type' => 'text',
+    ));
+
+    // Footer Address two title
+    $wp_customize -> add_setting('footer_address_two_title', array(
+        'default' => '',
+    ));
+    $wp_customize -> add_control('footer_address_two_title', array(
+        'label' => __('Footer Address Two Title'),
+        'section' => 'footer_settings',
+        'type' => 'text', 
+    ));
+
+    // Footer Address two
+    $wp_customize -> add_setting('footer_address_two', array(
+        'default' => '',
+    ));
+    $wp_customize -> add_control('footer_address_two', array(
+        'label' => __('Footer Address Two ', 'projukti'),
+        'section' => 'footer_settings',
+        'type' => 'text',
+    )); 
+    
+    // Footer Address three title
+    $wp_customize -> add_setting('footer_address_three_title', array(
+        'default' => '',
+    ));
+    $wp_customize -> add_control('footer_address_three_title', array(
+        'label' => __('Footer Address Three Title'),
+        'section' => 'footer_settings',
+        'type' => 'text', 
+    ));
+ 
+    // Footer Address three
+    $wp_customize -> add_setting('footer_address_three', array(
+        'default' => '',
+    ));
+    $wp_customize -> add_control('footer_address_three', array(
+        'label' => __('Footer Address Three ', 'projukti'),
+        'section' => 'footer_settings',
+        'type' => 'text',
+    ));
+
 }
 
 add_action('customize_register', 'projukti_footer_register');
