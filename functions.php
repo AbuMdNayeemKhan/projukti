@@ -73,6 +73,19 @@ function projukti_footer_register ($wp_customize){
         'type' => 'textarea',
     ));
 
+    // Social Links
+    $socials = ['twitter', 'facebook', 'linkedin', 'instagram'];
+    foreach ($socials as $social){
+        $wp_customize -> add_setting("footer_{$social}_link", array(
+            'default' => '#'
+        ));
+        $wp_customize -> add_control("footer_{$social}_link", array(
+            'label' => sprintf(__('%s URL', 'projukti'), ucfirst($social)),
+            'section' => 'footer_settings',
+            'type' => 'url',
+        ));
+    }
+
     // Footer Menu One Title
     $wp_customize -> add_setting('footer_menu_one_title', array(
         'default' => '',
