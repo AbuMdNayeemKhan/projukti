@@ -55,6 +55,14 @@ function projukti_footer_register ($wp_customize){
         'priority' => 120,
     ));
 
+    // Footer Logo
+    $wp_customize -> add_setting('footer_logo');
+    $wp_customize -> add_control(new WP_Customize_Image_Control($wp_customize, 'footer_logo', array(
+        'label' => __('Footer Logo', 'projukti'),
+        'settings' => 'footer_logo',
+        'section' => 'footer_settings',
+    )));
+
     // About Text
     $wp_customize -> add_setting('footer_about_text', array(
         'default' => '',

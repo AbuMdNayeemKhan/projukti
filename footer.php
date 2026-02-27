@@ -4,7 +4,7 @@
                 <!----- about company ----->
                 <div class="about-company">
                     <div class="f-logo">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-footer.png" alt="">
+                        <img src="<?php echo esc_url(get_theme_mod('footer_logo')); ?>" alt="">
                     </div>
 
                     <p><?php echo get_theme_mod('footer_about_text'); ?></p>
@@ -80,14 +80,14 @@
 
                     <!----- email ----->
                     <div class="address-details email">
-                        <a href="mailto:email@gmail.com">
+                        <a href="mailto:<?php echo get_theme_mod('footer_address_two') ?>">
                             <span><strong><?php echo get_theme_mod('footer_address_two_title') ?></strong> <?php echo get_theme_mod('footer_address_two') ?></span>
                         </a>
                     </div>
 
                     <!----- contact number ----->
                     <div class="address-details phone">
-                        <a href="tel:+8801619981998">
+                        <a href="tel:<?php echo get_theme_mod('footer_address_three') ?>">
                             <span><strong><?php echo get_theme_mod('footer_address_three_title') ?></strong> <?php echo get_theme_mod('footer_address_three') ?></span>
                         </a>
                     </div>

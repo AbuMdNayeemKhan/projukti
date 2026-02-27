@@ -1999,6 +1999,10 @@ footer {
     margin-bottom: 20px;
 }
 
+.f-logo img{
+    width: 100px;
+}
+
 .about-company p {
     color: #BFBCB2;
     font-size: 14px;
