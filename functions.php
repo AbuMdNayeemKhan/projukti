@@ -49,10 +49,48 @@ function projukti_theme_custom_logo() {
 }
 add_action('after_setup_theme', 'projukti_theme_custom_logo');
 
+// Blog Section Start Here
+function projukti_blog_register ($wp_customize){
+
+    // Add Section for Blog
+    $wp_customize -> add_section('projukti_blog_section', array(
+        'title' => __('Blog Section', 'projukti'),
+        'priority' => 101,
+    ));
+
+    // Add Setting for Blog Title
+    $wp_customize -> add_setting('projukti_blog_title', array(
+        'default' => 'Title',
+    ));
+
+    // Add Control for Blog Title
+    $wp_customize -> add_control('projukti_blog_title', array(
+        'label' => __('Blog Title', 'projukti'),
+        'section' => 'projukti_blog_section',
+        'type' => 'text',
+    ));
+
+    // Add Setting for Blog Discription
+    $wp_customize -> add_setting('projukti_blog_discription', array(
+        'default' => 'Description',
+    ));
+
+    // Add Control for Blog Title
+    $wp_customize -> add_control('projukti_blog_discription', array(
+        'label' => __('Blog Discription', 'projukti'),
+        'section' => 'projukti_blog_section',
+        'type' => 'text',
+    ));
+
+}
+add_action('customize_register', 'projukti_blog_register');
+// Blog Section Ended Here
+
+// Footer Section start here
 function projukti_footer_register ($wp_customize){
     $wp_customize -> add_section('footer_settings', array(
         'title' => __('Footer Settings', 'projukti'),
-        'priority' => 120,
+        'priority' => 102,
     ));
 
     // Footer Logo
@@ -178,7 +216,6 @@ function projukti_footer_register ($wp_customize){
     ));
 
 }
-
 add_action('customize_register', 'projukti_footer_register');
-
+// Footer section ended here
 ?>

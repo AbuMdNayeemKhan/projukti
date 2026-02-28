@@ -416,8 +416,8 @@
             <div class="container">
 
                 <div class="blog-heading">
-                    <h3>Our blog</h3>
-                    <p>Read our regular travel blog and know the latest update of tour and travel</p>
+                    <h3><?php echo get_theme_mod('projukti_blog_title');?></h3>
+                    <p><?php echo get_theme_mod('projukti_blog_discription');?></p>
                 </div>
 
 
