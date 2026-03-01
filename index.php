@@ -420,12 +420,11 @@
                     <p><?php echo esc_html(get_theme_mod('projukti_blog_discription'));?></p>
                 </div>
 
-
                 <div class="blog-wrapper">
                     <?php 
                         $posts = new WP_Query(array(
                             'post_type' => 'post',
-                            'posts_per_page' => 3,
+                            'posts_per_page' => 6,
                             'order' => 'DESC'
                         ));
                         if($posts->have_posts()) : 

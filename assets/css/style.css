@@ -1386,7 +1386,7 @@ section.blog {
 }
 .sngle-blog .img {
     width: 100%;
-    height: 250px;
+    height: 230px;
 }
 .single-blog-details {
     padding: 20px 20px 28px 20px;
@@ -1403,6 +1403,9 @@ section.blog {
     height: 6px;
     background-color: #FFB900;
     border-radius: 50%;
+}
+.date {
+    margin-top: 20px;
 }
 .date span {
     color: #5F5B53;
