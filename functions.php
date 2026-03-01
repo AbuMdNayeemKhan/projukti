@@ -84,6 +84,11 @@ function projukti_blog_register ($wp_customize){
 
 }
 add_action('customize_register', 'projukti_blog_register');
+
+function projukti_blog_feature(){
+    add_theme_support('post-thumbnails');
+}
+add_action ('after_setup_theme', 'projukti_blog_feature');
 // Blog Section Ended Here
 
 // Footer Section start here
