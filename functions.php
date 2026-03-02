@@ -83,6 +83,7 @@ function projukti_blog_register ($wp_customize){
     ));
 
 }
+
 add_action('customize_register', 'projukti_blog_register');
 
 function projukti_blog_feature(){
