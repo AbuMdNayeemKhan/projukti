@@ -17,7 +17,7 @@
 
                 <div class="author">
                     <div class="author-avatar">
-                        <img src="<?php echo get_avatar(get_the_author_meta('ID', 40));?>" alt="Author">
+                        <img src="<?php echo get_avatar_url( get_the_author_meta('ID') ); ?>" alt="Author">
                     </div>
                     <span class="author-name">By <?php the_author(); ?></span>
                 </div>
@@ -40,23 +40,23 @@
                 <!-- Social Share -->
                 <div class="social-share">
                     <span>Share:</span>
-                    <a href="#">F</a>
-                    <a href="#">T</a>
-                    <a href="#">L</a>
+                    <a href="https://www.facebook.com/sharer.php?u=<?php the_permalink(); ?>" target="_blank" ><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/intent/tweet?&url=<?php the_permalink(); ?>" target="_blank" ><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=<?php the_permalink(); ?>" target="_blank" ><i class="fa-brands fa-linkedin-in"></i></a>
                 </div>
 
                 <!-- Author Box -->
                 <div class="author-box">
                     <div class="author-avatar">
-                        <img src="author.jpg" alt="Author">
+                        <img src="<?php echo get_avatar_url( get_the_author_meta('ID') ); ?>" alt="Author">
                     </div>
                     <div class="author-info">
-                        <h3>Abu Md. Nayeem Khan</h3>
-                        <p>WordPress developer and Co-Founder of Bhaira. Passionate about building fast and scalable websites.</p>
+                        <h3><?php the_author(); ?></h3>
+                        <p><? echo get_the_author_meta('description'); ?></p>
                         <div class="author-social">
-                            <a href="#">F</a>
-                            <a href="#">T</a>
-                            <a href="#">L</a>
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
                         </div>
                     </div>
                 </div>

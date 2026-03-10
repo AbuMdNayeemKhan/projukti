@@ -1557,6 +1557,7 @@ section.blog {
     height: 40px;
     border-radius: 50%;
     overflow: hidden;
+    margin-bottom: 10px;
 }
 
 .author-avatar img {
@@ -1569,6 +1570,7 @@ section.blog {
     color: #5F5B53;
     font-size: 14px;
     font-weight: 400;
+    margin-bottom: 10px;
 }
 
 .featured-image {

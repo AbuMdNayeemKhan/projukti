@@ -1,5 +1,4 @@
 <?php get_header();?>
-
     <main>
         <!----- hero section ----->
         <?php get_template_part('sections/hero');?>
@@ -18,7 +17,5 @@
 
         <!----- our blog section ----->
         <?php get_template_part('sections/blog')?>
-
     </main>
-
 <?php get_footer();?>

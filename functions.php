@@ -20,6 +20,9 @@ function projukti_theme_scripts(){
     // Box Icon
     wp_enqueue_style('box-icon', 'https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css', array(), '2.1.4');
 
+    // Font Awesome
+    wp_enqueue_style('font-awesome-css', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css', array(), '7.0.1');
+
     // add jQuery
     wp_enqueue_script('jquery');
 
