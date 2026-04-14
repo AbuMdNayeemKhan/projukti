@@ -23,8 +23,9 @@
                 </div>
 
                 <div class="featured-image">
-                    <?php the_post_thumbnail('full');?>
-                    <!-- <img src="featured.jpg" alt="Featured Image"> -->
+                    <?php if(has_post_thumbnail()) :?>
+                        <?php the_post_thumbnail('full');?>
+                    <?php endif; ?>
                 </div>
 
                 <div class="blog-text">
